@@ -1,0 +1,334 @@
+<!DOCTYPE html><html lang="pt-br"><!-- Mirrored from c-acaushow.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Mar 2024 04:11:36 GMT --><!-- Mirrored from eudora.semanadosdescontos.com/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Mar 2024 00:04:01 GMT --><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon1.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon1.jpg">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Avaliação Principia</title>
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-bars" style="color: white"></i>
+      <!-- <img src="assets/images/google_principialogo.png" alt=""> -->
+      <img src="images/principialogo.png" alt="">
+      <span id="saldo" style="margin-left: auto"></span>
+    </header>
+    <main>
+      <div class="card pergunta01" id="pergunta01">
+        <div class="card__logo">
+            <img src="images/01quiz.jpg">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5, como você avaliaria sua familiaridade com a Principia?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você já experimentou algum desses produtos ou já conhece algum deles?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">ÁCIDO LÁTICO - TÔNICO</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">GEL DE LIMPEZA</p>
+            </div>
+
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">HIALURÔNICOS + RETINÓIDE</p>
+          </div>
+
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+          <p onclick="scrollToDown()">NIACINAMIDA</p>
+        </div>
+        <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">PEPTÍDEOS</p>
+        </div>
+
+        <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+          <p onclick="scrollToDown()">Outros</p>
+      </div>
+
+
+          </div>
+        </div>
+  
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card pergunta02" id="pergunta02" style="display: none">
+        <div class="card__logo">
+          <img src="images/02quiz.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+            De 0 a 5, como você avaliaria a qualidade dos produtos Principia que já experimentou?
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você notou alguma melhora na saúde e aparência desde que começou a usar os produtos da Principia?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim, significativamente</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não, não percebi melhorias notáveis</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta03" id="pergunta03" style="display: none">
+        <div class="card__logo">
+          <img src="images/03quiz.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5. Os produtos da Principia atenderam �&nbsp;s suas expectativas em relação aos resultados prometidos?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Como você avalia a textura e a sensação dos produtos da Principia?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Desagradável</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Neutro</p>
+            </div>
+
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Agradável</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta04" id="pergunta04" style="display: none">
+        <div class="card__logo">
+          <img src="images/04quiz.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5, Quanto você recomendaria os produtos da Principia para uma amiga ou colega?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>O que você espera da Principia no futuro?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Mais Exclusividade e qualidade</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Novas parcerias e linhas temáticas exclusivas</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+          Enviar avaliação
+        </button>
+      </div> 
+      <div class="card finalizacao" id="finalizacao" style="display: none">
+        <div class="finalizacao__titulo">
+          <h1>PARABÉNS!</h1>
+        </div>
+        <div class="finalizacao__trofeu">
+          <img src="images/kitpresente.webp" alt="">
+        </div>
+        <div class="finalizacao__descricao">
+          <p>
+            Parabéns por concluir nossa avaliação da Principia! Como agradecimento, você ganhou um 
+            <b>KIT AVANÇADO VC + RN</b>! Clique no botão <b>RESGATAR</b> abaixo para
+            resgatar seu prêmio.
+          </p>
+          <p>
+            Esperamos que aproveite os produtos e que eles tragam ainda mais beleza e confiança para o seu dia a dia.<br><br>Com carinho, <br>Equipe Principia.
+          </p>
+        </div>
+        <div class="finalizacao__botao">
+          <a href="https://principiaskin.semanadosdescontos.online/"><button><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
+        </div>
+      </div>
+
+      <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+      <div class="modal" tabindex="-1" id="modal01">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="card apresentacao">
+              <h2>
+                🎉 Quiz Exclusivo Dia Das Mães Principia! 🎉
+              </h2>
+              <p>
+                Bem-vindo(a) ao nosso evento especial! Aqui na Principia, queremos celebrar a beleza e o estilo com um toque extra de elegância. Junte-se a nós nesta jornada de descobertas e, ao final, ganhe um KIT AVANÇADO VC + RN Principia!
+                <strong>Pronto para começar?</strong>
+              </p>
+              <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/hideAllExcept.js"></script>
+    <script src="js/selectedCard.js"></script>
+    <script src="js/selectedResponse.js"></script>
+    <script src="js/buttonCheck.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/sendResponse.js"></script>
+    <script>
+      $(document).ready(function () {
+        let data = new Date();
+
+        var date = data.getDate();
+        var month = [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ][data.getMonth()];
+        var year = data.getFullYear();
+
+        $("#todayDate").html(`${date} de ${month} de ${year}**`);
+      });
+    </script>
+    <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+    <script>
+      var popup = document.getElementById("popup");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        popup.click();
+      });
+    </script>
+    
+    
+    
+    <script>
+    
+      // Função para capturar os parâmetros UTM
+  function getUTMParameters() {
+    var params = {};
+    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) {
+        // Usa a função customEncodeURIComponent para codificar o valor
+        params[key] = customEncodeURIComponent(value);
+    });
+    return params;
+  }
+
+  // Função personalizada para codificação
+  function customEncodeURIComponent(str) {
+    return encodeURIComponent(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
+  }
+
+    
+    
+</script>
+  
+
+
+
+
+
+</body><!-- Mirrored from c-acaushow.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Mar 2024 04:11:56 GMT --><!-- Mirrored from eudora.semanadosdescontos.com/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Mar 2024 00:04:21 GMT --></html>
